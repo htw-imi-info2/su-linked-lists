@@ -1,6 +1,6 @@
 package list3.comparable;
 
-public class Node<E> {
+public class Node<E extends Comparable<E>> implements Comparable<E> {
 
 	E data;
 	Node<E> next;
@@ -16,5 +16,10 @@ public class Node<E> {
 			return data.toString();
 		else
 			return data.toString() + ", " + next.toString();
+	}
+
+	@Override
+	public int compareTo(E o) {
+		return data.compareTo(o);
 	}
 }

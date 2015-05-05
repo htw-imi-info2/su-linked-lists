@@ -1,6 +1,6 @@
 package list3.comparable;
 
-public class LinkedList<E> {
+public class LinkedList<E extends Comparable<E>> {
 	Node<E> first;
 
 	public void add(E data) {
@@ -9,8 +9,10 @@ public class LinkedList<E> {
 			first = newNode;
 		else {
 			Node<E> current = first;
-			while (current.next != null)
+			while ((current.next != null)&&(current.next.compareTo( data) < 0))
 				current = current.next;
+			
+			newNode.next = current.next;
 			current.next = newNode;
 		}
 
