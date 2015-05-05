@@ -8,17 +8,21 @@ public class LinkedList<E extends Comparable<E>> {
 		if (first == null)
 			first = newNode;
 		else {
-			Node<E> current = first;
-			while ((current.next != null)&&(current.next.compareTo( data) < 0))
-				current = current.next;
-			
-			newNode.next = current.next;
-			current.next = newNode;
+			if (first.data.compareTo(data) > 0) {
+				newNode.next = first;
+				first = newNode;
+			} else {
+				Node<E> current = first;
+				while ((current.next != null)
+						&& (current.next.compareTo(data) < 0))
+					current = current.next;
+
+				newNode.next = current.next;
+				current.next = newNode;
+			}
 		}
 
 	}
-
-	
 
 	@Override
 	public String toString() {

@@ -30,7 +30,7 @@ public class LinkedListTest {
 		list.add("c");
 		list.add("a");
 		list.add("b");	
-	
+		list.add("d");
 		assertEquals("a, b, c, d",list.toString());
 	}
 	@Test
