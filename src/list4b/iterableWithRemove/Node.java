@@ -1,4 +1,4 @@
-package list4.iterable;
+package list4b.iterableWithRemove;
 
 public class Node<E extends Comparable<E>>  {
 	//implements Comparable<Node<E>>

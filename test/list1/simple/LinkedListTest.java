@@ -7,9 +7,6 @@ import org.junit.Test;
 
 public class LinkedListTest {
 
-	@Before
-	public void setUp() throws Exception {
-	}
 
 	@Test
 	public void testAdd() {

@@ -1,4 +1,4 @@
-package list4.iterable;
+package list4a.iterable;
 
 import static org.junit.Assert.assertEquals;
 
@@ -7,6 +7,8 @@ import java.util.Iterator;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import list4b.iterableWithRemove.LinkedList;
 
 public class LinkListTestIterator {
 	LinkedList<String> list;
@@ -32,7 +34,7 @@ public class LinkListTestIterator {
 
 	}
 
-	@Test
+	@Ignore
 	public void testIteratorRemove() {
 		list.add("a");
 		list.add("d");
@@ -49,7 +51,7 @@ public class LinkListTestIterator {
 
 	}
 
-	@Test
+	@Ignore
 	public void testIteratorRemoveFIRST() {
 		list.add("a");
 		list.add("d");
@@ -66,7 +68,7 @@ public class LinkListTestIterator {
 
 	}
 
-	@Test
+	@Ignore
 	public void testIteratorRemoveLAST() {
 		list.add("a");
 		list.add("d");
@@ -98,7 +100,7 @@ public class LinkListTestIterator {
 
 	}
 
-	@Test
+	@Ignore
 	public void testIteratorRemoveALLSteps() {
 		list.add("a");
 		list.add("d");
@@ -122,7 +124,7 @@ public class LinkListTestIterator {
 
 	}
 
-	@Test
+	@Ignore
 	public void testIteratorRemoveSECOND() {
 		list.add("a");
 		list.add("d");

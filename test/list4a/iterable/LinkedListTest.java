@@ -1,9 +1,11 @@
-package list4.iterable;
+package list4a.iterable;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import list4b.iterableWithRemove.LinkedList;
 
 public class LinkedListTest {
 	LinkedList<String> list;

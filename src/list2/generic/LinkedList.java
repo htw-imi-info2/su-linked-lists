@@ -13,7 +13,6 @@ public class LinkedList<E> {
 				current = current.next;
 			current.next = newNode;
 		}
-
 	}
 
 	public void addFirst(E data) {
