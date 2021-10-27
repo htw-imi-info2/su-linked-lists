@@ -86,5 +86,17 @@ public class LinkedListTest {
 		
 		assertEquals(null,list.get(25));
 	}
+	@Test
+	public void isIterable(){
+		list.add("a");
+		list.add("b");
+		list.add("c");
+		list.add("d");
+		String result = "";
+		for(String s : list){
+			result += s;
+		}
+		assertEquals("abcd",result);
+	}
 
 }

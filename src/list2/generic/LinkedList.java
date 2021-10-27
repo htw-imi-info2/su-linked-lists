@@ -1,6 +1,8 @@
 package list2.generic;
 
-public class LinkedList<E> {
+import java.util.Iterator;
+
+public class LinkedList<E> implements Iterable<E>{
 	Node<E> first;
 
 	public void add(E data) {
@@ -45,4 +47,8 @@ public class LinkedList<E> {
 		return current.data;
 	}
 
+	@Override
+	public Iterator<E> iterator() {
+		return null;
+	}
 }
